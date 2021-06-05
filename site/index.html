@@ -2,8 +2,36 @@
 <html>
 <head>
 	<title>Hello Coursera</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
+	<script>
+	function swapStyleSheet(sheet){
+		document.getElementById('pagestyle').setAttribute('href', sheet);
+	}
+
+
+	</script>
 </head>
 <body>
-<h1>Hello World. The first page is under way!</h1>
+<h1 id="top">Hello World. The first page is under way! </h1>
+
+<h2 style="color: blue;"> Change Page Style</h2>
+<button onclick="swapStyleSheet('style1.css')">Style 1</button>
+<button onclick="swapStyleSheet('style2.css')">Style 2</button>
+<button onclick="swapStyleSheet('style3.css')">Style 3</button>
+<button onclick="swapStyleSheet('style.css')">Default Style</button>
+
+<p style="color: green;">This page is meant to be a testing ground for learning the basics of HTML, CSS and JavaScript. There will be a variety of style/functionality changes that will be mashed together. They may not always make sense, but hey, it's time to learn something new.</p>
+<p style="color: purple;">Various changes will be made to the text, color, position, etc. Eventually, javascript will be active. And there will be goal updates periodically</p>
+<p style="color: cyan;">Goals for this page:</p>
+
+<div class="topOfPage">How's it going?<a href="#top" class="topOfPage" >Top of page</a></div>
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+h1{
+	color: blue;
+}
+.topOfPage {
+	text-decoration: none;
+	border: solid;
+}
+a:active , a:hover {
+	color: green;
+	background-color: yellow;
+	border-color: red;
+}
+div {
+	border: solid;
+}
+div.topOfPage {
+	transform: translateY(800px);
+	position: center;
+}
+
+
+
+p.topOfPage {
+	background-color: blue;
+	color: white;
+	border-color: yellow;
+}
+body {
+	background-color: black;
+}
