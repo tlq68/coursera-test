@@ -64,7 +64,7 @@ h3 {
 	margin-top:3px;
 }
 @media (max-width: 700px) {
-	.row {
+	#all{
 		width: 75%;
 	}
 }
