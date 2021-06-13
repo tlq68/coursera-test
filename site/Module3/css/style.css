@@ -1,0 +1,57 @@
+body {
+	background-color: #444444;
+	color: white;
+}
+
+#p1 {
+	color: #004777;
+	background-color: #A30000;
+}
+#p2 {
+	color: #A30000;
+	background-color: #FF7700;
+}
+#p3 {
+	color: #FF7700;
+	background-color: #EFD28D;
+}
+#p4 {
+	color: #EFD28D;
+	background-color: #00AFB5;
+}
+#p5 {
+	color: #00AFB5;
+	background-color: #004777;
+}
+label {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#explain {
+	margin: 15px;
+}
+.navbar-brand h1{
+	font-size: 10px;
+	font-family: 'Helvetica', sans-serif;
+	color: #EFD28D;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+#logo-img {
+	background: url('../BlindWarlock.png') no-repeat;
+	border: 2px solid black;
+  	display: inline-block;
+	width: 58px;
+	height: 77px;
+	margin: 0;
+	
+	margin-right: 8px;
+}
+p {
+	color: black;
+}
