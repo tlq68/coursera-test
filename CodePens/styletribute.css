@@ -1,0 +1,165 @@
+main {
+  text-align: center;
+  margin: -8px -8px;
+  background: url("Green_Leaf_BG.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+header {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  background-color: rgb(14, 102, 33, 0.8);
+  padding: 5px 0;
+  margin: 15px auto;
+}
+
+#img-div {
+  width: 95%;
+  background-color: rgb(14, 102, 33, 0.8);
+  padding: 15px 0;
+  margin: 15px auto;
+}
+div > img.snake {
+  width: 50vw;
+  height: 40%;
+  margin: auto;
+  padding: 25px 0 15px;
+  opacity: 1;
+}
+#img-caption {
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+#tribute-info {
+  width: 95%;
+  background-color: rgb(14, 102, 33, 0.8);
+  margin: auto;
+  padding: 10px 0;
+}
+ul li {
+  font-size: 16px;
+  padding: 5px 0;
+  text-align: left;
+}
+ul {
+  list-style: none;
+}
+li::before {
+  content: "♦";
+  color: red;
+}
+div > ul {
+  width: 50vw;
+  margin: auto;
+}
+#quote {
+  text-align: left;
+  font-size: 3vw;
+  color: #fff;
+  width: 75%;
+  background-color: rgb(14, 102, 33, 0.8);
+  margin: 15px auto;
+  padding: 10px 0;
+}
+footer {
+  text-align: center;
+
+  color: #fff;
+  width: 100%;
+  background-color: rgb(14, 102, 33, 0.8);
+}
+#link-div {
+  font-size: 3vw;
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  min-height: 100px;
+  position: relative;
+}
+#link-container {
+  position: absolute;
+  top: 50%;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: red;
+}
+
+@media (min-width: 1200px) {
+  #image-caption {
+    font-size: 3vw;
+    padding-bottom: 20px;
+  }
+  #tribute-info {
+    font-size: 3vw;
+  }
+  ul li {
+    font-size: 2vw;
+    padding: 20px 0;
+  }
+  #link-container {
+    position: static;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #image-caption {
+    font-size: 3vw;
+  }
+  #tribute-info {
+    font-size: 2.5vw;
+  }
+  ul li {
+    font-size: 2.5vw;
+    padding: 15px 0;
+  }
+  #link-container {
+    position: absolute;
+    top: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #image-caption {
+    font-size: 2.5vw;
+  }
+  #tribute-info {
+    font-size: 3vw;
+  }
+
+  ul li {
+    font-size: 3vw;
+    padding: 15px 0;
+  }
+  #link-container {
+    position: absolute;
+    top: 25%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  ul li {
+    font-size: 3vw;
+    padding: 15px 0;
+  }
+  #link-container {
+    position: absolute;
+    top: 30%;
+  }
+}
+@media (max-width: 575px) {
+  #image-caption {
+    font-size: 3.5vw;
+  }
+  ul li {
+    font-size: 3.5vw;
+    padding: 15px 0;
+  }
+  #link-container {
+    position: absolute;
+    top: 30%;
+  }
+}
