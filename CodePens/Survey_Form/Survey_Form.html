@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="survey_style.css">
+    <title>Document</title>
+</head>
+
+
+<body onload="document.form.reset();">
+ 
+      <header>
+    <h1 id="title">This is a survey</h1>
+    <p id="description">This is a survey description</p>
+</header>
+      
+      <main id="main-content">
+      
+          <form id="survey-form" name="form">
+      
+              <div class="name">
+                  <label for="name" id="name-label">Full Name<br>
+                  </label>
+                  <input id="name" type="text" placeholder="Full Name" required>
+              </div>
+              <div class="email">
+                  <label for="email" id="email-label">Email Address<br>
+                  </label>
+                  <input id="email" type="email" placeholder="example@email.com"  required>
+      
+              </div>
+              <!--Check for invalid input-->
+               <div class="age">
+                   <label for="number" id="number-label">Age&nbsp; <span>(optional)<br></span>
+                               </label>
+                               <input id="number" type="number" placeholder="Enter your age" min="0" max="130" >
+               </div>
+              <!--Define range using min and max-->
+              <!--Have placeholders for all inputs-->
+      
+              <!--Radio buttons grouped with name attributes-->
+              <div class="radio">
+                  <h2 id="radio-header">Are you or are you not an Apache Helicopter?</h2>
+                 <br>
+                  <input type="radio" id="female" name="gender" value="female" checked="checked">
+                  <label for="female">Yes</label><br>
+                  <input type="radio" id="male" name="gender" value="male" >
+                  <label for="male">No</label><br>
+      
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">It's a secret...</label>
+              </div>
+      
+              <div class="dropdown">
+                  <h2 id="dropdown-header">Preference?</h2>
+                  <label for="dropdown">Choose one:</label>
+                  <select name="dropdown" id="dropdown">
+                  <option value="one">One</option>
+                  <option value="two">Two</option>
+                  <option value="three">Three</option>
+                  <option value="four">Four</option>
+                  </select>
+              </div>
+              <!--Checkboxes with value attributes-->
+              <div class="checkbox">
+                  <h2 id="checkbox-header">Check all that apply:</h2>
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> I love music</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> I don't like chocolate</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> I enjoy watching movies</label><br>
+              </div>
+              <!--Add textarea for additional comments-->
+              <div class="textarea">
+                  <label id="textarea-label" for="w3review">Additional Comments:</label>
+                  <br>
+                  <textarea id="w3review" style="resize: none;" name="w3review" rows="4" cols="50" placeholder="Write a comment"></textarea>
+              </div>
+              <!--Button for submitting the file-->
+              <div class="button-div">
+                 <button class="button" type="submit" id="submit">Submit</button>
+              </div>
+            </form>
+      </main>
+  
+</body>
+</html>
